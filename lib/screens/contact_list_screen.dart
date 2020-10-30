@@ -10,7 +10,6 @@ import 'call_screen.dart';
 class ContactList extends StatefulWidget {
   static const String id = 'ContactList';
   final CubeUser currentUser;
-
   const ContactList(this.currentUser);
 
   @override
@@ -133,8 +132,6 @@ class _ContactListState extends State<ContactList> {
                 ).catchError(
                   (onError) {
                     Navigator.pop(context, true);
-                    //Navigator.pop(context);
-                    //Navigator.pop(context); // cancel current Dialog
                   },
                 );
               },
