@@ -52,7 +52,7 @@ class _ContactListState extends State<ContactList> {
             padding: const EdgeInsets.all(16.0),
             child: TextField(
               controller: _idFilter,
-              decoration: new InputDecoration(labelText: 'Id'),
+              decoration: InputDecoration(labelText: 'Id'),
             ),
           ),
           Row(

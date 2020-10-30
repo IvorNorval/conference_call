@@ -12,8 +12,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class LoginScreenState extends State<LoginScreen> {
-  final TextEditingController _loginFilter = new TextEditingController();
-  final TextEditingController _passwordFilter = new TextEditingController();
+  final TextEditingController _loginFilter = TextEditingController();
+  final TextEditingController _passwordFilter = TextEditingController();
   String _login = "";
   String _password = "";
   bool _isLoginContinues = false;
@@ -68,13 +68,13 @@ class LoginScreenState extends State<LoginScreen> {
           new Container(
             child: TextField(
               controller: _loginFilter,
-              decoration: new InputDecoration(labelText: 'Login'),
+              decoration: InputDecoration(labelText: 'Login'),
             ),
           ),
           new Container(
             child: TextField(
               controller: _passwordFilter,
-              decoration: new InputDecoration(labelText: 'Password'),
+              decoration: InputDecoration(labelText: 'Password'),
               obscureText: true,
             ),
           ),
